@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Productos</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/9c52fa3f63.js" crossorigin="anonymous"></script>
+    <!-- Mi estilo -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header y Nav Bar -->
+    <header>
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./media/honey-svgrepo-com.svg" alt="" width="45" height="30">
+                </a>
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                    <a class="nav-link" href="./productos.html">Productos</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                    <div>
+                        <button class="sidebar-toggle">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main y Aside -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Elementos generados a partir del JSON -->
+                <main id="items" class="main"></main>
+                <main id="main"></main>
+            </div>
+        </div>
+        <!-- Aside para el carrito -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <img src="./media/honey-svgrepo-com.svg" class="logo" alt="">
+                <!-- <h2>Carrito</h2> -->
+                <button class="close-btn"><i class="fas fa-times"></i></button>
+            </div>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total &dollar; <span id="total"></span></p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <p class="mb-0 p-3">
+                        La tienda de Alex
+                    </p>
+                </div>
+                <div class="col-12 col-md-6">
+                    <p class="mb-0 p-3">
+                        hola@latiendadealex.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Codigo JS -->
+    <script src="app.js"></script>
+</body>
+
+</html>
